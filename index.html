@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="image/chat-lab.jpg" image/x-icon">
+  <title>ChatLab</title>
+
+  <script src="chat.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <p>Olá! Seu apelido qual é?</p>
+
+  <div id="buscarApelido">
+    <label for="message-nickname"></label> <input type="text" id="message-nickname" required="required"
+      placeholder="Apelido..." autofocus>
+    <button class="botLogin" onclick="login()">Entrar</button>
+  </div>
+
+
+  <div id="chat-container" class="hide">
+    <div id="chat-messages"></div>
+    <label for="message-input" class="form-label"></label> <input type="text" class="form-control" id="message-input"
+      required="required" placeholder="Digite uma mensagem..." autofocus>
+    <button onclick="commitMessageClickHandler()" id="message-commit">
+      Adicionar mensagem
+    </button>
+  </div>
+</body>
+
+</html>
